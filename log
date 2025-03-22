@@ -1,0 +1,11 @@
+Sat 22 Mar 2025 01:11:40 AM UTC: 
+ exercises.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:61:8: error: unused variable ‘suma’ [-Werror=unused-variable]
+   61 |    int suma = 0;
+      |        ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3f6cb15
