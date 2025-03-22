@@ -32,3 +32,20 @@ Sat 22 Mar 2025 01:24:33 AM UTC:
  tests:  2|3
 total_score: 20/70
 c8427f8
+Sat 22 Mar 2025 01:25:21 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:62:15: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   62 |    int dato = first(L);
+      |               ^~~~~
+exercises.c:63:15: error: comparison between pointer and integer [-Werror]
+   63 |    while(dato != NULL)
+      |               ^~
+exercises.c:66:12: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   66 |       dato = next(L);
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+290a787
