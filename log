@@ -15,3 +15,14 @@ Sat 22 Mar 2025 01:11:54 AM UTC:
  tests:  1|4
 total_score: 10/70
 aefcea6
+Sat 22 Mar 2025 01:24:17 AM UTC: 
+ exercises.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:62:5: error: ‘dato’ undeclared (first use in this function)
+   62 |    *dato = (int*)first(L);
+      |     ^~~~
+exercises.c:62:5: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+f3d53d6
