@@ -86,3 +86,26 @@ arraylist.h:32:24: note: expected ‘List *’ but argument is of type ‘int *�
 cc1: all warnings being treated as errors
 Compilation failed
 e6a9dbf
+Sun 23 Mar 2025 07:03:25 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:87:18: error: comparison between pointer and integer [-Werror]
+   87 |    while(*numero != NULL)
+      |                  ^~
+exercises.c:89:17: error: comparison between pointer and integer [-Werror]
+   89 |       if(numero == elem)
+      |                 ^~
+exercises.c:91:21: error: passing argument 1 of ‘popCurrent’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   91 |          popCurrent(numero);
+      |                     ^~~~~~
+      |                     |
+      |                     int *
+In file included from exercises.c:6:
+arraylist.h:32:24: note: expected ‘List *’ but argument is of type ‘int *’
+   32 | void *popCurrent(List *L);
+      |                  ~~~~~~^
+cc1: all warnings being treated as errors
+Compilation failed
+363e962
