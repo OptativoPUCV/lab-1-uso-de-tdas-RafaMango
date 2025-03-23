@@ -107,7 +107,7 @@ void copia_pila(Stack* P1, Stack* P2)
    Stack* auxiliar = create_stack();
    void* dato;
    
-   while((dato = popFront(P1)) != NULL))
+   while((dato = popFront(P1)) != NULL)
    {
       pushFront(auxiliar, dato);
    }
