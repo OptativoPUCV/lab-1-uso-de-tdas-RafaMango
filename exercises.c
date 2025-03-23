@@ -88,11 +88,11 @@ void eliminaElementos(List*L, int elem)
    {
       if(*numero == elem)
       {
-         popCurrent(numero);
+         free(popCurrent(L));
+         
       }
+      numero = (int*)next(L);
    }
-   
-
 }
 
 /*
