@@ -132,3 +132,26 @@ Sun 23 Mar 2025 07:24:15 PM UTC:
  tests:  3|2
 total_score: 40/70
 ef3a569
+Sun 23 Mar 2025 08:05:20 PM UTC: 
+ exercises.c | 16 +++++++++++++++-
+ 1 file changed, 15 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:107:22: error: implicit declaration of function ‘createStack’; did you mean ‘create_stack’? [-Werror=implicit-function-declaration]
+  107 |    Stack* auxiliar = createStack();
+      |                      ^~~~~~~~~~~
+      |                      create_stack
+exercises.c:107:22: error: initialization of ‘Stack *’ {aka ‘List *’} from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+exercises.c:110:16: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  110 |    while((dato = popFront(P1) != NULL))
+      |                ^
+exercises.c:112:17: error: ‘aux’ undeclared (first use in this function)
+  112 |       pushFront(aux, dato);
+      |                 ^~~
+exercises.c:112:17: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:114:16: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  114 |    while((dato = popFront(auxiliar) != NULL))
+      |                ^
+cc1: all warnings being treated as errors
+Compilation failed
+e285f0e
