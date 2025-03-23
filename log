@@ -187,3 +187,13 @@ exercises.c:114:16: error: assignment to ‘void *’ from ‘int’ makes point
 cc1: all warnings being treated as errors
 Compilation failed
 9699756
+Sun 23 Mar 2025 08:07:02 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:110:40: error: expected statement before ‘)’ token
+  110 |    while((dato = popFront(P1)) != NULL))
+      |                                        ^
+Compilation failed
+99c7287
