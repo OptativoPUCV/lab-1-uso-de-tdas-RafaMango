@@ -41,7 +41,8 @@ debes reservar memoria para cada elemento que agregues.
 Al finalizar retorna la lista creada.
 */
 
-List* crea_lista() {
+List* crea_lista() 
+{
    List* L = create_list();
    for(int i = 1; i <= 10; i++)
    {
@@ -57,13 +58,14 @@ Ejercicio 2.
 Crea una función que reciba una lista de enteros (int*) y 
 retorne la suma de sus elementos.
 */
-int sumaLista(List *L) {
-   int suma = 0;
-   int *dato = (int*)first(L);
+int sumaLista(List *L)
+{
+   int suma = 0; //contador
+   int *dato = (int*)first(L); //tomar el primer dato de la lista
    while(dato != NULL)
    {
-      suma += *dato;
-      dato = (int*)next(L);
+      suma += *dato; //no tengo que explicar esto
+      dato = (int*)next(L); //pasar al siguiente dato
    }
    
    return suma;
@@ -76,9 +78,20 @@ un entero elem. La función debe eliminar todos los elementos
 de la lista que sean iguales a elem.
 Asume que popCurrent luego de eliminar un elemento se
 posiciona en el elemento anterior.
-*/
+*/ 
+// 1 , 2 , 3, 4
 
-void eliminaElementos(List*L, int elem){
+void eliminaElementos(List*L, int elem)
+{
+   int *numero = (int*)first(L);
+   while(numero != NULL)
+   {
+      if(numero == elem)
+      {
+         popCurrent(numero);
+      }
+   }
+   
 
 }
 
