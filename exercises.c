@@ -141,7 +141,9 @@ int parentesisBalanceados(char *cadena)
       {
          if(get_size(nuevaPila) == 0)return 0;
          char* topeP = (char*)pop(nuevaPila);
-         if((dato == ')' && *topeP != '(') || (dato == ']' && *topeP != '[') || (dato == '}' && *topeP != '{'))
+         if((dato == ')' && *topeP != '(') || 
+            (dato == ']' && *topeP != '[') || 
+            (dato == '}' && *topeP != '{'))
          {
             return 0;
          }
@@ -149,6 +151,6 @@ int parentesisBalanceados(char *cadena)
       
    }
    
-   return 0;
+   return ;
 }
 
