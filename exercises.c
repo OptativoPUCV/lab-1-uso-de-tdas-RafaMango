@@ -64,7 +64,7 @@ int sumaLista(List *L)
    int *dato = (int*)first(L); //tomar el primer dato de la lista
    while(dato != NULL)
    {
-      suma += *dato; //no tengo que explicar esto
+      suma += *dato;
       dato = (int*)next(L); //pasar al siguiente dato
    }
    
@@ -135,7 +135,7 @@ int parentesisBalanceados(char *cadena)
       char dato = cadena[i];
       if(dato == '(' || dato == '[' || dato == '{')
       {
-         push(nuevaPila, &cadena[i]);
+         push(nuevaPila, &cadena[i]); 
       }
       else if(dato == ')' || dato == ']' || dato == '}')
       {
