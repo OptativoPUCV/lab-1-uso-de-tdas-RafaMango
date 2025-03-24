@@ -151,6 +151,9 @@ int parentesisBalanceados(char *cadena)
       
    }
    
-   return ;
+   return get_size(nuevaPila) == 0 ? 1 : 0; 
+   // get_size cantidad de elementos en la pila
+   // == 0 verifica si hay elementos
+   //pila vacia == balanceada y si != vacia desBalanceada
 }
 
